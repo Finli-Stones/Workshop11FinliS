@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Commit</title>
+
+    <style>
+
+        @keyframes colourScroll {
+            0% {
+                opacity: 100%;
+            }
+            50% {
+                opacity: 40%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        body {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            text-justify: auto;
+            height: 100vh;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 10% 80% 10%;
+            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+            margin-inline: 5vw;
+            margin-block: 5vh;
+        }
+        h1 {
+            grid-row: 1;
+            grid-column: 2;
+            animation-name: colourScroll;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        p1 {
+            grid-column: 2;
+            grid-row: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        My First Commit
+    </h1>
+
+    <p1>
+        Boiler plate text
+    </p1>
+</body>
+</html>
